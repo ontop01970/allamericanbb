@@ -226,9 +226,25 @@
                 <h2>In a Jam?</h2>
          
 
-<!-- wp:image {"id":9,"width":"423px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://raw.githubusercontent.com/ontop01970/allamericanbb/main/ccincell1.webp"  alt="" class="wp-image-9" style="width:423px;height:auto"/></figure>
+<!-- wp:image {"id":9,"sizeSlug":"full","linkDestination":"none","className":"responsive-image"} -->
+<figure class="wp-block-image size-full responsive-image">
+    <img src="https://raw.githubusercontent.com/ontop01970/allamericanbb/main/ccincell1.webp" alt="" class="wp-image-9"/>
+</figure>
 <!-- /wp:image -->
+
+<style>
+    .responsive-image img {
+        width: 423px;
+        height: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        .responsive-image img {
+            width: 100%;
+            max-width: 423px;
+        }
+    }
+</style>
      </g>
                 </svg>
                 <p>Your Key to Freedom</p>
